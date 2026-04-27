@@ -1,0 +1,65 @@
+name: Security Report (Low-Risk Only)
+description: Report a non-sensitive security concern. For exploitable vulnerabilities, use private disclosure (see below).
+title: "[Security]: "
+labels: ["security", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > **STOP - Read this first.**
+        >
+        > **Do not file a public issue for an exploitable vulnerability.** Public issues are visible to everyone.
+        >
+        > For sensitive disclosures, use GitHub's private vulnerability reporting on the affected repository (Security tab > "Report a vulnerability"), or email security@your-org.example.
+        >
+        > Use this template only for low-risk security hygiene items (missing best practices, hardening suggestions, dependency notices that are already public, etc.).
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I confirm this report does not contain exploit details for an unpatched vulnerability.
+          required: true
+        - label: I understand that this issue will be publicly visible.
+          required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the security concern.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Estimated severity
+      options:
+        - Informational
+        - Low
+        - Medium
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected
+    attributes:
+      label: Affected component(s)
+      description: Which repository, service, or component is affected?
+    validations:
+      required: true
+
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Recommendation
+      description: Suggested mitigation or fix, if any.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: References, links to public advisories, CVEs, etc.

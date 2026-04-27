@@ -1,0 +1,62 @@
+name: Task / Chore
+description: Internal engineering work, refactor, or maintenance item
+title: "[Task]: "
+labels: ["task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for internal work that isn't a user-reported bug or a new feature - refactors, dependency upgrades, tech debt, infra changes, etc.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be done and why?
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How will we know this is done? List the conditions for completion.
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of work
+      options:
+        - Refactor
+        - Dependency upgrade
+        - Infrastructure
+        - Documentation
+        - Tech debt
+        - Tooling / DX
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Low
+        - Medium
+        - High
+        - Urgent
+      default: 1
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Links to related issues, RFCs, design docs, etc.
