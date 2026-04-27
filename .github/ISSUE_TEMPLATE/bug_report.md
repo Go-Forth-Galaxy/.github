@@ -6,32 +6,28 @@ labels: ["bug", "needs-triage"]
 assignees: []
 ---
 
-## Summary
-<!-- A clear, concise description of the bug. -->
+## What page are you experiencing an issue on?
+<!-- URL or name of the page/screen where the issue occurs. -->
 
-## Steps to reproduce
+## Steps to produce issue
 1.
 2.
 3.
 
-## Expected behavior
+## Expected result
 <!-- What did you expect to happen? -->
 
-## Actual behavior
-<!-- What actually happened? Include error messages, stack traces, or screenshots. -->
+## Actual result
+<!-- What actually happened? Include any error messages or stack traces. -->
 
-## Severity
-<!-- Critical / High / Medium / Low -->
+## Notes
+<!-- Anything else that might help - related issues, recent changes, workarounds you've tried, etc. -->
 
-## Version / commit
-<!-- e.g. v1.4.2 or commit abc123 -->
+## Screenshots
+<!-- Drag and drop image, video, or other files here to attach them. -->
 
 ## Environment
-<!-- Production / Staging / Development / Local -->
+<!-- Production / Development -->
 
-## Additional context
-<!-- Logs, screenshots, related issues, anything else useful. -->
-
-## Checklist
-- [ ] I have searched existing issues and this has not been reported.
-- [ ] I am running the latest version (or have noted my version above).
+## Version / commit
+<!-- Optional - e.g. v1.4.2 or commit abc123 -->
